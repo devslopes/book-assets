@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TanstagramDev" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GoJ-b3-8TI">
+                                <subviews>
+                                    <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="smallTriangle2" translatesAutoresizingMaskIntoConstraints="NO" id="Rzg-uB-snK">
+                                        <frame key="frameInset" minX="243" minY="154" width="95" height="78"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bigTriangle1" translatesAutoresizingMaskIntoConstraints="NO" id="Mk7-yN-OVr">
+                                        <frame key="frameInset" minX="32" minY="154" width="94" height="156"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="parallelogram" translatesAutoresizingMaskIntoConstraints="NO" id="O6c-1y-7xW">
+                                        <frame key="frameInset" minX="188" minY="54" width="168" height="73"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="square" highlightedImage="square" translatesAutoresizingMaskIntoConstraints="NO" id="deW-0C-f73">
+                                        <frame key="frameInset" minY="8" width="133" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="midTriangle" translatesAutoresizingMaskIntoConstraints="NO" id="fV4-5b-eFQ">
+                                        <frame key="frameInset" minX="224" minY="253" width="131" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bigTriangle2" translatesAutoresizingMaskIntoConstraints="NO" id="cgR-3F-ZJd">
+                                        <frame key="frameInset" minX="11" minY="401" width="240" height="123"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                    </imageView>
+                                    <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="smallTriangle1" translatesAutoresizingMaskIntoConstraints="NO" id="bdd-Tu-qVQ">
+                                        <frame key="frameInset" minX="108" minY="253" width="127" height="82"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="savePhotosButton" translatesAutoresizingMaskIntoConstraints="NO" id="qZz-jz-cmf">
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="2Af-OO-BML"/>
+                                    <constraint firstAttribute="width" constant="167" id="vEu-DQ-s2L"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="1tj-Ho-HYJ" appends="YES" id="4pA-JQ-F7A"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GoJ-b3-8TI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="70W-hB-oJd"/>
+                            <constraint firstItem="GoJ-b3-8TI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="JM6-K0-Jc2"/>
+                            <constraint firstAttribute="trailing" secondItem="qZz-jz-cmf" secondAttribute="trailing" id="M8g-8g-WN3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qZz-jz-cmf" secondAttribute="bottom" id="lfv-cG-gIV"/>
+                            <constraint firstAttribute="trailing" secondItem="GoJ-b3-8TI" secondAttribute="trailing" id="pco-ca-iap"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GoJ-b3-8TI" secondAttribute="bottom" id="vIr-hS-F6V"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bigTriangleOne" destination="Mk7-yN-OVr" id="M29-xU-sfa"/>
+                        <outlet property="bigTriangleTwo" destination="cgR-3F-ZJd" id="FvG-Y7-6Wm"/>
+                        <outlet property="containter" destination="GoJ-b3-8TI" id="0M6-pz-9nO"/>
+                        <outlet property="midTriangle" destination="fV4-5b-eFQ" id="2D5-ZY-770"/>
+                        <outlet property="parallelogram" destination="O6c-1y-7xW" id="xFT-IS-rHV"/>
+                        <outlet property="saveToPhotos" destination="qZz-jz-cmf" id="Ex4-hc-zj6"/>
+                        <outlet property="smallTriangleOne" destination="bdd-Tu-qVQ" id="q7T-rf-ZDV"/>
+                        <outlet property="smallTriangleTwo" destination="Rzg-uB-snK" id="3DK-Ff-6WY"/>
+                        <outlet property="squareImg" destination="deW-0C-f73" id="XKK-ZZ-ESF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="1tj-Ho-HYJ">
+                    <connections>
+                        <action selector="saveToPhotosTapGesture:" destination="BYZ-38-t0r" id="x60-bq-nHd"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bigTriangle1" width="165" height="330"/>
+        <image name="bigTriangle2" width="331" height="166"/>
+        <image name="midTriangle" width="165" height="165"/>
+        <image name="parallelogram" width="246" height="83"/>
+        <image name="savePhotosButton" width="346" height="54"/>
+        <image name="smallTriangle1" width="164" height="83"/>
+        <image name="smallTriangle2" width="41" height="82"/>
+        <image name="square" width="164" height="164"/>
+    </resources>
+</document>

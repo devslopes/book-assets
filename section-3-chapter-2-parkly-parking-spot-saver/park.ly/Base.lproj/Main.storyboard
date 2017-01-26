@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="park_ly" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CdB-V3-kDf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyH-Zk-S5l" customClass="RoundButton" customModule="park_ly" customModuleProvider="target">
+                                <rect key="frame" x="150" y="562" width="75" height="75"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="Cma-Es-MV1"/>
+                                    <constraint firstAttribute="height" constant="75" id="Mbh-xB-AZS"/>
+                                </constraints>
+                                <state key="normal" image="parkCar"/>
+                                <connections>
+                                    <action selector="parkBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1d9-We-T7J"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="park.ly-logo" translatesAutoresizingMaskIntoConstraints="NO" id="G82-zI-qW4">
+                                <rect key="frame" x="16" y="20" width="343" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="bSs-WY-RGV"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="G82-zI-qW4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="3Ov-Vz-oq7"/>
+                            <constraint firstItem="CdB-V3-kDf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4jn-Uz-14X"/>
+                            <constraint firstAttribute="trailing" secondItem="CdB-V3-kDf" secondAttribute="trailing" id="IDX-6w-D3I"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yyH-Zk-S5l" secondAttribute="bottom" constant="30" id="Iqf-xm-88n"/>
+                            <constraint firstItem="CdB-V3-kDf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="P0u-0T-Myy"/>
+                            <constraint firstItem="G82-zI-qW4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="QeA-vT-0KO"/>
+                            <constraint firstItem="yyH-Zk-S5l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fcP-37-yPx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CdB-V3-kDf" secondAttribute="bottom" id="nZo-Py-8hr"/>
+                            <constraint firstItem="G82-zI-qW4" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="pxt-sS-N3X"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="CdB-V3-kDf" id="EiC-V1-RXS"/>
+                        <outlet property="parkBtn" destination="yyH-Zk-S5l" id="be6-Gh-aD7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="park.ly-logo" width="273" height="75"/>
+        <image name="parkCar" width="51" height="39"/>
+    </resources>
+</document>
