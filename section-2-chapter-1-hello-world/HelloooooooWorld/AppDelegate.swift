@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  HelloooooWorld
+//  HelloooooooWorld
 //
-//  Created by Pearson Basham on 10/30/16.
-//  Copyright © 2016 Devslopes. All rights reserved.
+//  Created by Caleb Stultz on 1/27/17.
+//  Copyright © 2017 Caleb Stultz. All rights reserved.
 //
 
 import UIKit
