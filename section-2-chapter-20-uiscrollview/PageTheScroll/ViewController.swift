@@ -11,13 +11,9 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
-    var images = [UIImageView]()
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         
     }
     
@@ -31,7 +27,6 @@ class ViewController: UIViewController {
         for x in 0...2 {
             let image = UIImage(named: "icon\(x).png")
             let imageView = UIImageView(image: image)
-            images.append(imageView)
             
             var newX: CGFloat = 0.0
             
